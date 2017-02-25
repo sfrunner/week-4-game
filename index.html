@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Computer Collectors Game</title>
+		<title>Steven Fox's Sports Ball Game</title>
 		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,12 +15,12 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="assets/javascript/game.js"></script>		
-	</head>
+		</head>
 	<body>
 		<div class="container-fluid">
 			<div class=row>
 				<div class="col-md-4">
-					<h1 class="bg-primary">Sport Balls Collector's</h1>
+					<h1 class="bg-primary">Sport Balls Collector</h1>
 				</div>
 				<div class="col-md-9"></div>
 			</div>
@@ -28,7 +28,7 @@
 				<div class="col-md-8">
 					<section class="jumbotron" id="instructions">
 						<p>You will be given a random number at the start of the game.</p>
-						<p>There are four type of balls from different sports below. By clicking on a ball, you will add a specific amount of points to your total score.</p>
+						<p>There are four types of balls from different sports below. By clicking on a ball, you will add a specific amount of points to your total score.</p>
 						<p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
 						<p>The value of each ball is hidden from you until you click on it.</p>
 						<p>Each time when the game starts, the game will change the values of each crystal.</p>
@@ -41,8 +41,8 @@
 					<h3 id="random-number">Your Random Numer is: </h3>
 				</div>
 				<div class="col-md-2" id="score-div">
-					<h5 id="wins-score">Wins: 0</h5>
-					<h5 id="losses-score">Losses: 0</h5>
+					<h4 id="wins-score">Wins: 0</h4>
+					<h4 id="losses-score">Losses: 0</h4>
 				</div>
 				<div class="col-md-7"></div>
 			</div>
@@ -63,15 +63,17 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3">
-					<section class="jumbotron">
-						<h5 id="total-score">Your Total Score: 0</h5>
+					<section class="jumbotron" id="total-score-header-box">
+						<h3 id="total-score">Your Total Score</h3>
 					</section>
 				</div>
 				<div class="col-md-9"></div>
 			</div>
 			<div class="row">
 				<div class="col-md-3">
-					<h3 class="bg-danger" id="current-value">Current Value: 0</h3>
+					<section class="jumbotron" id="total-score-box">
+						<h2 id="current-value"></h2>
+					</section>
 				</div>
 				<div class="col-md-9"></div>
 			</div>
