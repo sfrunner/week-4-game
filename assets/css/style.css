@@ -1,0 +1,11 @@
+﻿body{
+	background-image:url("../images/Sports.png")
+}
+
+#instructions{
+	text-align:left;
+	background-color:black;
+	color:orange;
+	padding-left:0%;
+	padding-right:0%;
+}
