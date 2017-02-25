@@ -17,7 +17,7 @@ $(document).ready(function(){
 	$("#random-number").html("Your Random Number is " + randomNumber);
 	
 	$("[alt='basketball']").click(function(){
-		$("#current-value").show();
+		$("#current-value").css("color","red");
 		totalScoreArray.push(ballOneRN);
 		for (var i = 0;i < totalScoreArray.length; i++){
 			currentScore = currentScore + parseInt(totalScoreArray[i]);
@@ -28,7 +28,7 @@ $(document).ready(function(){
 	});
 	
 	$("[alt='football']").click(function(){
-		$("#current-value").show();
+		$("#current-value").css("color","red");
 		totalScoreArray.push(ballTwoRN);
 		for (var i = 0;i < totalScoreArray.length; i++){
 			currentScore = currentScore + parseInt(totalScoreArray[i]);
@@ -39,7 +39,7 @@ $(document).ready(function(){
 	});
 	
 	$("[alt='soccer']").click(function(){
-		$("#current-value").show();
+		$("#current-value").css("color","red");
 		totalScoreArray.push(ballThreeRN);
 		for (var i = 0;i < totalScoreArray.length; i++){
 			currentScore = currentScore + parseInt(totalScoreArray[i]);
@@ -50,7 +50,7 @@ $(document).ready(function(){
 	});
 	
 	$("[alt='baseball']").click(function(){
-		$("#current-value").show();
+		$("#current-value").css("color","red");
 		totalScoreArray.push(ballFourRN);
 		for (var i = 0;i < totalScoreArray.length; i++){
 			currentScore = currentScore + parseInt(totalScoreArray[i]);
@@ -72,7 +72,7 @@ $(document).ready(function(){
 			ballFourRN = Math.floor((Math.random() * 12) + 1);
 			totalScoreArray = [];
 			$("#random-number").html("Your Random Number is " + randomNumber);
-			$("#current-value").hide();
+			$("#current-value").css("color","#eee");
 		}
 		else if(parseInt(a) > parseInt(b)){
 			alert("You Lose!");
@@ -85,7 +85,7 @@ $(document).ready(function(){
 			ballFourRN = Math.floor((Math.random() * 12) + 1);
 			totalScoreArray = [];
 			$("#random-number").html("Your Random Number is " + randomNumber);
-			$("#current-value").hide();
+			$("#current-value").css("color","#eee");
 
 		}
 	}
