@@ -1,4 +1,4 @@
-$(".container").ready(function(){
+$(document).ready(function(){
 
 	var randomNumber = Math.floor((Math.random() * 120) + 19);
 	var ballOneRN = Math.floor((Math.random() * 12) + 1);
