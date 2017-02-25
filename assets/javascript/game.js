@@ -62,7 +62,7 @@ $(document).ready(function(){
 	
 	function ifelse (a,b){
 		if(parseInt(a) === parseInt(b)){
-			$.alert('This is a custom alert box', 'Alert Dialog');
+			alert("You Win!");
 			var currentWinsScore = parseInt($("#wins-score").html().replace("Wins: ","")) + 1;
 			$("#wins-score").html("Wins: " + currentWinsScore);
 			randomNumber = Math.floor((Math.random() * 120) + 19);
