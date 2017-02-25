@@ -17,6 +17,11 @@ $(".container").ready(function(){
 	$("#random-number").html("Your Random Number is " + randomNumber);
 	
 	$("[alt='basketball']").click(function(){
+		$(this).rotate({
+      		duration:400,
+      		angle: 0,
+      		animateTo:360
+      	});
 		$("#current-value").css("color","red");
 		totalScoreArray.push(ballOneRN);
 		for (var i = 0;i < totalScoreArray.length; i++){
@@ -28,6 +33,11 @@ $(".container").ready(function(){
 	});
 	
 	$("[alt='football']").click(function(){
+		$(this).rotate({
+      		duration:400,
+      		angle: 0,
+      		animateTo:360
+      	});
 		$("#current-value").css("color","red");
 		totalScoreArray.push(ballTwoRN);
 		for (var i = 0;i < totalScoreArray.length; i++){
@@ -39,6 +49,11 @@ $(".container").ready(function(){
 	});
 	
 	$("[alt='soccer']").click(function(){
+	$(this).rotate({
+      		duration:400,
+      		angle: 0,
+      		animateTo:360
+      	});
 		$("#current-value").css("color","red");
 		totalScoreArray.push(ballThreeRN);
 		for (var i = 0;i < totalScoreArray.length; i++){
@@ -50,6 +65,11 @@ $(".container").ready(function(){
 	});
 	
 	$("[alt='baseball']").click(function(){
+	$(this).rotate({
+      		duration:400,
+      		angle: 0,
+      		animateTo:360
+      	});
 		$("#current-value").css("color","red");
 		totalScoreArray.push(ballFourRN);
 		for (var i = 0;i < totalScoreArray.length; i++){
