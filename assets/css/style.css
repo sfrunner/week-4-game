@@ -1,18 +1,18 @@
 ﻿body{
-	background-image:url("../images/Sports.png")
+	background-image: url("../images/Sports.png");
 }
 
 .bg-primary{
 	background-color: #663300;
-	text-align:center;
+	text-align: center;
 }
 
 #instructions{
-	text-align:left;
-	background-color:black;
-	color:orange;
-	padding-left:0%;
-	padding-right:0%;
+	text-align: left;
+	background-color: black;
+	color: orange;
+	padding-left: 0%;
+	padding-right: 0%;
 }
 
 #total-score-header-box{

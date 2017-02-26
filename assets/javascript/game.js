@@ -5,12 +5,6 @@ $(document).ready(function(){
 	var ballTwoRN = Math.floor((Math.random() * 12) + 1);
 	var ballThreeRN = Math.floor((Math.random() * 12) + 1);
 	var ballFourRN = Math.floor((Math.random() * 12) + 1);
-	console.log(ballOneRN);
-	console.log(ballTwoRN);
-	console.log(ballThreeRN);
-	console.log(ballFourRN);
-	console.log(randomNumber);
-	console.log($("#current-value").html());
 	var totalScoreArray = [];
 	var currentScore = 0;
 	
@@ -29,7 +23,7 @@ $(document).ready(function(){
 		}
 		$("#current-value").html(currentScore);
 		currentScore = 0;
-		ifelse($("#current-value").html(),randomNumber);
+		ifwinlose($("#current-value").html(),randomNumber);
 	});
 	
 	$("[alt='football']").click(function(){
@@ -45,7 +39,7 @@ $(document).ready(function(){
 		}
 		$("#current-value").html(currentScore);
 		currentScore = 0;
-		ifelse($("#current-value").html(),randomNumber);
+		ifwinlose($("#current-value").html(),randomNumber);
 	});
 	
 	$("[alt='soccer']").click(function(){
@@ -61,7 +55,7 @@ $(document).ready(function(){
 		}
 		$("#current-value").html(currentScore);
 		currentScore = 0;
-		ifelse($("#current-value").html(),randomNumber);
+		ifwinlose($("#current-value").html(),randomNumber);
 	});
 	
 	$("[alt='baseball']").click(function(){
@@ -77,10 +71,10 @@ $(document).ready(function(){
 		}
 		$("#current-value").html(currentScore);
 		currentScore = 0;
-		ifelse($("#current-value").html(),randomNumber);
+		ifwinlose($("#current-value").html(),randomNumber);
 	});
 	
-	function ifelse (a,b){
+	function ifwinlose (a,b){
 		if(parseInt(a) === parseInt(b)){
 			alert("You Win!");
 			var currentWinsScore = parseInt($("#wins-score").html().replace("Wins: ","")) + 1;
@@ -106,7 +100,6 @@ $(document).ready(function(){
 			totalScoreArray = [];
 			$("#random-number").html("Your Random Number is " + randomNumber);
 			$("#current-value").css("color","#eee");
-
 		}
 	}
 
